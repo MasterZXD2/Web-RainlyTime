@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RainlyTime</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body>
+    <div>
+        <img alt="sky" src="images/sky.png" /> 
+        <img alt="cloud" src="images/cloud.png" />
+        <img alt="rainsky" src="images/rainsky.png" /> 
+        <img alt="raincloud" src="images/raincloud.png" />
+        <img alt="water" src="images/water.png" /> 
+        <img class="waterWave" alt="wwater" src="images/wwater.png" />
+        <img alt="ground" src="images/ground.png" />
+        <img alt="land" src="images/land.png" /> 
+        <img class="wheatWind" alt="wheat" src="images/wheat.png" /> 
+        <img alt="waterm" src="images/waterm.png" /> 
+        <img class="millSpin" alt="mill" src="images/mill_c.png" /> 
+        <img alt="stone" src="images/stone.png" /> 
+    </div>
+
+    <img class="se" alt="se" src="images/se.png" />
+    <img class="au" alt="au" src="images/maudio.png" />
+    <img class="mu" alt="mu" src="images/sound.png" />
+    <img class="cr" alt="cr" src="images/noramlc.png" />
+
+    <div id="sett">
+        <label>
+            Water Wheel Volume
+            <input id="wwvolume" type="range" class="audioSett" min="0" max="1" step="0.01" value="0.7">
+            <a id = "wwvv"> 70% </a>
+        </label>
+        <br>
+        <label>
+            Wind Volume
+            <input id="wvolume" type="range" class="audioSett" min="0" max="1" step="0.01" value="0.5">
+            <a id = "wvv"> 50% </a>
+        </label>
+        <br>
+        <label>
+            Wave Volume
+            <input id="wavolume" type="range" class="audioSett" min="0" max="1" step="0.01" value="0.25">
+            <a id = "wavv"> 25% </a>
+        </label>
+        <br>
+        <label>
+            Bird Volume
+            <input id="bvolume" type="range" class="audioSett" min="0" max="1" step="0.01" value="0.8">
+            <a id = "bvv"> 80% </a>
+        </label>
+        <br>
+        <label>
+            Rain Volume
+            <input id="rvolume" type="range" class="audioSett" min="0" max="1" step="0.01" value="0.5">
+            <a id = "rvv"> 50% </a>
+        </label>
+        <br>
+        <label>
+            Sound Volume
+            <input id="svolume" type="range" class="audioSett" min="0" max="100" step="1" value="100">
+            <a id = "svv"> 100% </a>
+        </label>
+    </div>
+
+    <div id="sud">
+        <label>
+            Sound url(Youtude url):
+            <input id="urlsound" type="text" class="audioSett" value="wn0IyvGBeUI">
+        </label>
+    </div>
+
+    <iframe 
+    id="lofiPlayer"
+    width="0"
+    height="0" 
+    src="https://www.youtube.com/embed/wn0IyvGBeUI?enablejsapi=1&autoplay=0"
+    frameborder="0" 
+    allow="autoplay"
+    allowfullscreen
+    ></iframe>
+
+    <div id="rainDiv"> </div>
+
+    <script src="app.js"> </script>
+</body>
+
+</html>
